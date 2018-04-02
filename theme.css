@@ -1,0 +1,345 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+	color: #444444;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("photos/bg.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+  padding: 23px 10px 23px 10px;
+  width: 100%;
+  font-size: 1em;
+  line-height: 23px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+  z-index: 10;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  vertical-align: middle;
+  line-height: 23px;
+  height: 23px;
+}
+
+nav ul li {
+  margin: 0 25px 0 25px;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+#contact {
+  padding: 0 12px 0 12px;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+.header {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    position: relative;
+    top: 180px;
+    text-align: right;
+    opacity: 1;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3.2em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #444;
+  line-height: 1.5;
+  font-family: 'Playfair Display', serif;
+}
+
+h1 span {
+	background-color: #f94e3f;
+	color: #ffffff;
+}
+
+h1 span:nth-child(odd) {
+    background: #2b90d9;
+}
+
+.options {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.options div {
+  border: 3px solid #000;
+  padding: 15px;
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.options div:a {
+  color: #000;
+}
+
+
+
+.options div:hover {
+  background-color: #f94e3f;
+  color: #f94e3f;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+#intro {
+	padding-bottom: 50px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #f94e3f;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+main {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+section {
+	line-height: 1.6;
+	font-weight: 300;
+	font-size: 1.1em;
+}
+
+#for_scroll {
+  width: 100%;
+  height: 100px;
+}
+
+/*shopping diary*/
+.dropdown-content {
+  display: none;
+}
+
+.item {
+  display: none;
+  margin-bottom: 15px;
+}
+
+
+/*dropdown*/
+.dropbtn {
+    background-color: #f94e3f;
+    color: white;
+    padding: 6px;
+    font-size: 14px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ffffff}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #2b90d9;
+}
+
+/*calendar**/
+.calendar {
+    background-color: #ffffff;
+    color: black;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #000;
+}
+
+/*layout*/
+.condition {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+
+}
+
+/*products*/
+
+.ui-widget {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+.products, .metadata, .essential {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.metadata {
+  justify-content: flex-start;
+  font-size: 12px;
+}
+
+.products {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.products img {
+  width: 180px;
+}
+
+.products > div {
+  margin: 0 16px 20px 12px;
+}
+
+.essential {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 100%;
+}
+
+.what {
+  font-weight: 400;
+  font-size:14px;
+  width: 50%;
+}
+
+.price {
+  font-size: 14px;
+  text-align: right;
+  width: 50%;
+}
+
+.where {
+  border: 1px solid #000;
+  background-color: rgb(276, 276, 276);
+  margin-right: 8px;
+}
+
+.category, .where {
+  border: 1px solid #000;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.cate_food {
+  background-color: #acd7e6;
+}
+
+.cate_clothing {
+  background-color: #bcebd6;
+}
+
+.cate_supplies {
+  background-color: #d5caed;
+}
+
+
+/*burger menu*/
+
+/*selection*/
+::-moz-selection {
+ background: #f94e3f; color: white;
+}
+::selection {
+ background: #f94e3f; color: white;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:link {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+
+.highcharts-button {
+  display: none;
+}
