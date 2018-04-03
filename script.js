@@ -1,5 +1,15 @@
 window.onload=function(){
 
+$(window).on('scroll', function(){
+    if ($(window).scrollTop()){
+        console.log('testing');
+        $('nav').addClass('resizing');
+    }
+    else {
+        $('nav').removeClass('resizing');
+    }
+})
+
 Highcharts.chart('container', {
     chart: {
         type: 'column'
@@ -57,17 +67,6 @@ Highcharts.chart('container', {
 });
 
 
-$(window).on('scroll', function(){
-    if ($(window).scrollTop()){
-        console.log('testing');
-        $('nav').addClass('resizing');
-    }
-    else {
-        $('nav').removeClass('resizing');
-    }
-})
-
-
 $(function() {
     $( "#datepicker" ).datepicker({
         onSelect: function(dateText) {
@@ -85,12 +84,14 @@ $(function() {
                     $( val ).addClass('show');
                 });
             } else {
+                $('.nodata').html('<p>No data this day.</p>');
                 $('.item').removeClass('show');
             }
             event.preventDefault();
         }
     });
     $( "#food" ).click(function() {
+        $('.nodata').removeClass('show');
         $('.item').removeClass('show');
         event.preventDefault();
         let food = ['#fox_cookie', '#pad_thai', '#o_juice', '#spaghetti', '#ice_cream', 'cn_leaf', 'mushroom', 'chicken_burger', 'cheese_powder', 'chocolate_milk'];

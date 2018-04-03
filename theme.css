@@ -37,18 +37,17 @@ body {
     background-size: cover;
 }
 
-nav {
+.navbar {
   padding: 23px 10px 23px 10px;
   box-sizing: border-box;
   width: 100%;
   font-size: 1em;
-  line-height: 23px;
   position: fixed;
   top: 0;
   background-color: #fff;
   border-bottom: 1px solid #ebebeb;
-  z-index: 10;
   letter-spacing: 1px;
+  z-index: 10;
   text-transform: uppercase;
   font-weight: 500;
   display: flex;
@@ -58,13 +57,13 @@ nav {
   transition: .5s;
 }
 
-nav .logo img {
+.navbar .logo img {
   width: 50px;
   height: 50px;
   transition: .5s;
 }
 
-nav ul {
+.navbar ul {
   display: flex;
   flex-flow: row;
   vertical-align: middle;
@@ -72,24 +71,25 @@ nav ul {
   height: 23px;
 }
 
-nav ul li {
+.navbar ul li {
   list-style: none;
   margin: 0 25px 0 25px;
 }
 
-nav ul li a {
+.navbar ul li a {
   color: #000;
+  line-height: 23px;
   transition: .5s;
 }
 
-nav ul li a:active,
-nav ul li a:hoever {
+.navbar ul li a:active,
+.navbar ul li a:hoever {
   color: #ffffff;
   background-color: #2b90d9;
   text-decoration: none;
 }
 
-nav.resizing {
+.navbar.resizing {
   background-color: #000;
   color: #ffffff;
   padding: 0px 10px;
@@ -98,16 +98,18 @@ nav.resizing {
   align-items: center;
 }
 
-nav.resizing a {
+.navbar.resizing a {
   color: #fff;
 }
 
-nav.resizing .logo img {
+.navbar.resizing .logo img {
   height: 30px;
   width: 30px;
 }
 
-
+.navbar.resizing ul li #contact {
+  border: 2px solid #fff;
+}
 
 #contact {
   padding: 0 12px 0 12px;
@@ -157,7 +159,6 @@ h1 span:nth-child(odd) {
   padding: 15px;
   width: 200px;
   height: 100px;
-  background-color: #fff;
 }
 
 .options div:a {

@@ -25,7 +25,7 @@
 
     <div class="bg-image">
 
-	            <nav>
+	            <nav class="navbar">
 	                <div class="logo"><a href="index.html"><img src="photos/logo.png"></a></div>
 	                <ul>
 	                    <li><a href="#">How I spend money in London</a></li>
@@ -39,7 +39,8 @@
 
         <div class="header">
         	<h1>
-        		how i spend money<br>
+        		how i spend<br>
+                money<br>
         		in <span>l</span><span>o</span><span>n</span><span>d</span><span>o</span><span>n</span> <br>
         		within 14 days
         	</h1>
@@ -127,7 +128,7 @@
 
         <!--products-->
         <div class="products">
-
+            <p class="nodata"></p>
             <div id="fox_cookie" class="item">
                 <img src="product/01.JPG">
                 <div class="essential">
@@ -335,6 +336,7 @@
             var scroll = new SmoothScroll('a[href*="#comparison"], a[href*="#diary"]', {
             	speed: 800,
             	offset: 0,
+                header: '.navbar'
             });
         </script>
     </body>
