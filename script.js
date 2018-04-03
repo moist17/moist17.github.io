@@ -1,4 +1,3 @@
-
 window.onload=function(){
 
 Highcharts.chart('container', {
@@ -56,7 +55,6 @@ Highcharts.chart('container', {
 
     }]
 });
-
 
 
 $(function() {

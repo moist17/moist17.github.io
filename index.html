@@ -3,7 +3,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-        <title>Demo</title>
+        <title>How I Spend Money in London within 14 Days</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="Demo Project">
@@ -24,19 +24,17 @@
     <body onload="function()">
 
     <div class="bg-image">
-        <header class="large">
-            <nav>
-                <img src="photos/logo.png">
-                <ul>
-                    <li>How I spend money in London</li>
-                    <li>Money blog</li>
-                    <li>About this project</li>
-                </ul>
-                <ul>
-                    <li id="contact">Contact</li>
-                </ul>
-            </nav>
-        </header>
+	            <nav class="large">
+	                <a href="index.html"><img src="photos/logo.png"></a>
+	                <ul>
+	                    <li>How I spend money in London</li>
+	                    <li>Money blog</li>
+	                    <li>About this project</li>
+	                </ul>
+	                <ul>
+	                    <li id="contact">Contact</li>
+	                </ul>
+	            </nav>
 
         <div class="header">
         	<h1>
@@ -45,7 +43,7 @@
         		within 14 days
         	</h1>
             <div class="options">
-                <a data-scroll href="#for_scroll">
+                <a data-scroll href="#comparison">
                     <div class="space">
                     London, Compared to
                     </div>
@@ -69,8 +67,7 @@
     	</section>
 
         <!--comparison-->
-        <div id="for_scroll">
-        </div>
+
 
     	<section id="comparison">
             <hr>
@@ -330,7 +327,10 @@
     
         <script src="./script.js"></script>
         <script>
-            var scroll = new SmoothScroll('a[href*="#"]');
+            var scroll = new SmoothScroll('a[href*="#comparison"], a[href*="#diary"]', {
+            	speed: 800,
+            	offset: 0,
+            });
         </script>
     </body>
   </html>
