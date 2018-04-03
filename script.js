@@ -57,6 +57,17 @@ Highcharts.chart('container', {
 });
 
 
+$(window).on('scroll', function(){
+    if ($(window).scrollTop()){
+        console.log('testing');
+        $('nav').addClass('resizing');
+    }
+    else {
+        $('nav').removeClass('resizing');
+    }
+})
+
+
 $(function() {
     $( "#datepicker" ).datepicker({
         onSelect: function(dateText) {
