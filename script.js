@@ -67,31 +67,40 @@ Highcharts.chart('container', {
 });
 
 
+var availableDates = ["1/4/2018","2/4/2018","3/4/2018"];
+    function available(date) {
+      dmy = date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear();
+      if ($.inArray(dmy, availableDates) != -1) {
+        return [true, "","Available"];
+      } else {
+        return [false,"","unAvailable"];
+      }
+    }
+    $('#datepicker').datepicker({ beforeShowDay: available });
+
 $(function() {
     $( "#datepicker" ).datepicker({
         onSelect: function(dateText) {
             console.log("Selected date: " + dateText);
-            if (dateText == '03/01/2018') {
+            if (dateText == '04/01/2018') {
                 $('.item').removeClass('show');
                 let day1 = ['#spaghetti', '#scarf', '#socks'];
                  jQuery.each( day1, function( i, val ) {
                     $( val ).addClass('show');
                 });
-            } else if (dateText == '03/02/2018') {
+            } else if (dateText == '04/02/2018') {
                 $('.item').removeClass('show');
                 let day2 = ['#mushroom', '#cn_leaf', '#o_juice'];
                 jQuery.each( day2, function( i, val ) {
                     $( val ).addClass('show');
                 });
             } else {
-                $('.nodata').html('<p>No data this day.</p>');
                 $('.item').removeClass('show');
             }
             event.preventDefault();
         }
     });
     $( "#food" ).click(function() {
-        $('.nodata').removeClass('show');
         $('.item').removeClass('show');
         event.preventDefault();
         let food = ['#fox_cookie', '#pad_thai', '#o_juice', '#spaghetti', '#ice_cream', 'cn_leaf', 'mushroom', 'chicken_burger', 'cheese_powder', 'chocolate_milk'];

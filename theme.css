@@ -213,9 +213,9 @@ section {
 	font-size: 1.1em;
 }
 
-#for_scroll {
-  width: 100%;
-  height: 100px;
+
+footer {
+  height: 150px;
 }
 
 /*shopping diary*/
