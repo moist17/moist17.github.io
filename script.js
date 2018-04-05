@@ -66,18 +66,16 @@ Highcharts.chart('container', {
     }]
 });
 
-
-
+var availableDates = ["04/01/2018, 04/02/2018, 04/03,2018"];
+function available(date) {
+    var string = datepicker.dateFormat('mm/dd/yy', date);
+    return [ availableDates.indexOf(string) != -1];
+}
 
 $(function() {
-    //mindate, maxdate
-    $('#datepicker').datepicker({
-        dateFormat: "mm/dd/yy",
-        maxDate: new Date('04/09/2018'),
-        minDate: new Date('03/26/2018')
-    });
-    //show something
     $( "#datepicker" ).datepicker({
+        dateFormat: 'mm/dd/yy',
+        beforeShowDay: available,
         onSelect: function(dateText) {
             console.log("Selected date: " + dateText);
             if (dateText == '04/01/2018') {
