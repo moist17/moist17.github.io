@@ -1,0 +1,33 @@
+body {
+	margin: 0 auto;
+}
+
+table {
+	width: 50%;
+	font-size: 14px;
+	border-collapse: collapse;
+	font-family: 'Inconsolata', monospace;
+	font-size: 14px;
+	margin: 0 auto;
+}
+
+th {
+	background-color: #fff;
+	padding: 10px;
+	border-bottom: 1px solid #8CD790;
+	text-align: left;
+	color: #000;
+}
+
+th:hover {
+	color: #000;
+}
+
+td {
+	padding: 8px;
+}
+
+tr:hover {
+	background-color: #8CD790;
+	color: #fff;
+}
