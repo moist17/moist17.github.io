@@ -1,6 +1,6 @@
   $(document).ready(function(){//When the document is fully loaded
     $.ajax({//retrieve the data that is...
-      url: 'expenditure_new.csv',//..at this location
+      url: 'expenditure.csv',//..at this location
       dataType: 'text',//and of type "text"
   }).done(function(data){
     var allRows = data.split(/\r?\n|\r/);
@@ -46,3 +46,14 @@
     $('#expendituredata').append(table);
       });
     });
+
+
+  $(window).on('scroll', function(){
+    if ($(window).scrollTop()){
+        console.log('testing');
+        $('nav').addClass('resizing');
+    }
+    else {
+        $('nav').removeClass('resizing');
+    }
+})
