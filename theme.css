@@ -399,20 +399,6 @@ footer {
           box-sizing: border-box;
 }
 
-a:link {
-  color: #000;
-  text-decoration: underline;
-}
-
-a:hover {
-  color: #f94e3f;
-}
-
-a:visited {
-  color: #000;
-}
-
-
 .highcharts-button {
   display: none;
 }
