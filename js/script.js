@@ -296,9 +296,3 @@ var pie = new d3pie("pieChart", {
         }
     }
 });
-
-            var scroll = new SmoothScroll('a[href*="#comparison"], a[href*="#diary"]', {
-                speed: 800,
-                offset: 0,
-                header: '.navbar'
-            });

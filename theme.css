@@ -375,7 +375,15 @@ footer {
 }
 
 
-/*burger menu*/
+#pieChart {
+  width: 720px;
+  margin: 0 auto;
+}
+
+#pieChart > svg {
+  display: block;
+  margin: 0 auto;
+}
 
 /*selection*/
 ::-moz-selection {
@@ -393,6 +401,11 @@ footer {
 
 a:link {
   color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #f94e3f;
 }
 
 a:visited {
