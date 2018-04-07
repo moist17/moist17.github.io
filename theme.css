@@ -9,6 +9,20 @@ body {
 	color: #444444;
 }
 
+/*radar*/
+
+#radarchart {
+  overflow: hidden;
+  margin: 0;
+  font-size: 14px;
+}
+
+#chart {
+  margin: 50px 0; 
+}   
+
+/*radar*/
+
 a {
   color: #000;
   text-decoration: none;

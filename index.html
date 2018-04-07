@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
   <html>
     <head>
@@ -11,12 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
         <script src="js/d3pie.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="jquery-ui-themes-1.12.1/jquery-ui.css">
         <link rel="stylesheet" href="theme.css">
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="js/RadarChart.js"></script>
         <script src="js/smooth/smooth-scroll.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -26,25 +25,25 @@
 
     <div class="bg-image">
 
-	            <nav class="navbar">
-	                <div class="logo"><a href="https://moist17.github.io/"><img src="photos/logo.png"></a></div>
-	                <ul>
+                <nav class="navbar">
+                    <div class="logo"><a href="https://moist17.github.io/"><img src="photos/logo.png"></a></div>
+                    <ul>
                          <li><a href="https://moist17.github.io/">How I spend money in London</a></li>
                          <li><a href="https://moist17.github.io/moneyblog/blog.html">Money blog</a></li>
                          <li><a href="https://moist17.github.io/about/about.html">About this project</a></li>
-	                </ul>
-	                <ul>
-	                    <li id="contact">Contact</li>
-	                </ul>
-	            </nav>
+                    </ul>
+                    <ul>
+                        <li id="contact">Contact</li>
+                    </ul>
+                </nav>
 
         <div class="header">
-        	<h1>
-        		how i spend<br>
+            <h1>
+                how i spend<br>
                 money<br>
-        		in <span>l</span><span>o</span><span>n</span><span>d</span><span>o</span><span>n</span> <br>
-        		within 7 days
-        	</h1>
+                in <span>l</span><span>o</span><span>n</span><span>d</span><span>o</span><span>n</span> <br>
+                within 7 days
+            </h1>
             <div class="options">
                 <a data-scroll href="#comparison">
                     <div class="space">
@@ -60,52 +59,56 @@
         </div>
     </div>
 
-	<main>
+    <main>
 
         <!--intro-->
-    	<section id="intro">
+        <section id="intro">
             <p>
-    		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
-    	</section>
+        </section>
 
         <!--comparison-->
 
 
-    	<section id="comparison">
+        <section id="comparison">
             <hr>
-    		<h2>
-    			How expensive is London
-    		</h2>
-    		<div>
+            <h2>
+                How expensive is London
+            </h2>
+            <div>
                 <p>
-    			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
                 <p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.
                 </p>
                 <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 </p>
             </div>
-    		<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto; padding-bottom: 50px"></div>
-    	</section>
+
+            <div id="radarchart">
+                <div id="chart">
+                </div>
+            </div>
+        </section>
 
 
     <div class="shopimg">
     </div>
 
         <!--shopping diary-->
-    	<section id="diary">
+        <section id="diary">
             <hr>
-    		<h2>
-    			A peek to my shopping diary
-    		</h2>
-    		<div>
+            <h2>
+                A peek to my shopping diary
+            </h2>
+            <div>
                 <p>
-    			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
-    		</div>
+            </div>
 
         <h2></h2>
 
@@ -517,7 +520,7 @@
                 This is my expenditure in March presented by pie chart. You can find full records <a href="data/datatest.html">here</a>.
                 </p>
             </div>
-    	</section>
+        </section>
 
         <footer>
         </footer>
@@ -530,5 +533,6 @@
             });
         </script>
         <script src="js/script.js"></script>
+        <script src="js/radar.js"></script>
     </body>
   </html>

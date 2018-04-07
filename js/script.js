@@ -10,64 +10,6 @@ $(window).on('scroll', function(){
     }
 })
 
-Highcharts.chart('container', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Taipei vs. London'
-    },
-    subtitle: {
-        text: 'Source: numbeo.com'
-    },
-    xAxis: {
-        categories: [
-            'Milk',
-            'Rice',
-            'Eggs',
-            'Cheese',
-            'Wine',
-            'Beer',
-            'Metro Ticket',
-            'Meal outside',
-            'Cappuccino',
-            'Internet',
-        ],
-        crosshair: true
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Pounds (£)'
-        }
-    },
-    tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>£ {point.y:.1f}</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
-    },
-    plotOptions: {
-        column: {
-            pointPadding: 0.2,
-            borderWidth: 0
-        }
-    },
-    series: [{
-        name: 'Taipei',
-        data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1]
-
-    }, {
-        name: 'London',
-        data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5]
-
-    }]
-});
-
-
-
 // products
 
 var availableDates = ["04/01/2018", "04/02/2018", "04/03/2018", "04/04/2018", "04/05/2018", "04/06/2018", "04/07/2018"];
@@ -294,5 +236,15 @@ var pie = new d3pie("pieChart", {
         "colors": {
             "segmentStroke": "#000000"
         }
-    }
+    },
+    //tooltips
+    "tooltips": {
+        "enabled": true,
+        "type": "placeholder",
+        "string": "{label}: {percentage}%",
+        "styles": {
+            "font-size": 12,
+        }
+    },
+  //tooltips
 });
