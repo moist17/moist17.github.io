@@ -97,6 +97,7 @@ a:hover {
   color: #ffffff;
   background-color: #f94e3f;
   text-decoration: none;
+  transition: .5s;
 }
 
 .navbar.resizing {
@@ -169,17 +170,17 @@ h1 span:nth-child(odd) {
   padding: 15px;
   width: 200px;
   height: 100px;
+  background-color: #fff;
+  opacity: 0.9;
 }
 
 .options div:a {
   color: #000;
 }
 
-
-
 .options div:hover {
   background-color: #f94e3f;
-  color: #f94e3f;
+  color: #ffffff;
   cursor: pointer;
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
@@ -403,11 +404,13 @@ footer {
  background: #f94e3f; color: white;
 }
 
+/*
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+*/
 
 .highcharts-button {
   display: none;
