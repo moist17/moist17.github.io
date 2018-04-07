@@ -8,6 +8,17 @@ body {
 	color: #444;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #f94e3f;
+  text-decoration: none;
+}
+
 .postlist {
 	display: flex;
 	flex-direction: row;
@@ -124,11 +135,11 @@ body {
   transition: .5s;
 }
 
-.navbar ul li a:active,
-.navbar ul li a:hoever {
+.navbar ul li:hover {
   color: #ffffff;
-  background-color: #2b90d9;
+  background-color: #f94e3f;
   text-decoration: none;
+  transition: .5s;
 }
 
 .navbar.resizing {
