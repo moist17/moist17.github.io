@@ -21,10 +21,11 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     </head>
     <body onload="function()">
 
-    <div class="bg-image">
+    <div class="bg-image" id="pagetop">
 
                 <nav class="navbar">
                     <div class="logo"><a href="index.html"><img src="photos/logo.png"></a></div>
@@ -529,6 +530,9 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. This is my expenditure in March presented by pie chart. You can find full records <a href="data/datatest.html">here</a>.
                 </p>
             </div>
+            <div id="go_up">
+                <p><a data-scroll href="#pagetop"><i class="far fa-arrow-alt-circle-up"></i></a></p>
+            </div>
         </section>
 
         <footer>
@@ -537,7 +541,7 @@
         </footer>
     </main>
         <script>
-            var scroll = new SmoothScroll('a[href*="#comparison"], a[href*="#diary"]', {
+            var scroll = new SmoothScroll('a[href*="#comparison"], a[href*="#diary"], a[href*="#pagetop"]', {
                 speed: 800,
                 offset: 0,
                 header: '.navbar'

@@ -15,6 +15,26 @@ a:hover {
   text-decoration: none;
 }
 
+#go_up {
+  font-size: 2.5em;
+  color: #a3a1a1;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#go_up a:link {
+  color: #a3a1a1;
+}
+
+#go_up a:visited {
+  color: #a3a1a1;
+}
+
+#go_up a:hover {
+  color: #444;
+  background-color: #fff;
+}
+
 .navbar {
   padding: 23px 10px 23px 10px;
   box-sizing: border-box;
@@ -54,13 +74,13 @@ a:hover {
   margin: 0 25px 0 25px;
 }
 
-.navbar ul li a {
+.navbar ul li a:link {
   color: #000;
   line-height: 23px;
   transition: .5s;
 }
 
-.navbar ul li:hover {
+.navbar ul li a:hover {
   color: #ffffff;
   background-color: #f94e3f;
   text-decoration: none;
