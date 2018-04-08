@@ -10,11 +10,6 @@ body {
     background-color: #FFEEE4;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
-}
-
 .container {
     margin: 0 auto;
     font-size: 14px;
