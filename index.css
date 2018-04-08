@@ -153,6 +153,10 @@ section {
 	font-size: 1.1em;
 }
 
+section a:link, section a:visited {
+  text-decoration: underline;
+}
+
 /*shopping diary*/
 .dropdown-content {
   display: none;

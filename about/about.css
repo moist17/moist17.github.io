@@ -41,16 +41,13 @@ body {
     box-shadow: 1rem 1rem #6d9d88;
 }
 
-.project {
-    display: block;
-}
-
 .project h2 {
     background-color: #282c37;
     color: #fff;
     height: 35px;
     padding: 0 5px 0 5px;
     line-height: 35px;
+    font-size: 1.3em;
 }
 
 .faq {
@@ -58,6 +55,7 @@ body {
     margin: 0 auto;
     position: relative;
     top: 200px;
+    margin-bottom: 100px;
 }
 
 h2 {
