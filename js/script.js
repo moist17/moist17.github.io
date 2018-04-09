@@ -246,5 +246,4 @@ var pie = new d3pie("pieChart", {
             "font-size": 12,
         }
     },
-  //tooltips
 });
