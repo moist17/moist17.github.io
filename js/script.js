@@ -2,7 +2,7 @@ window.sr = ScrollReveal();
 sr.reveal('.bg-image', { duration: 500 });
 sr.reveal('.header', { duration: 500 });
 sr.reveal('#intro', { duration: 500 });
-sr.reveal('#video', { duration: 500});
+sr.reveal('#video', { duration: 500 });
 sr.reveal('#comparison', { duration: 500 });
 sr.reveal('#radarchart', { duration: 500 });
 sr.reveal('#diary', { duration: 500 });
