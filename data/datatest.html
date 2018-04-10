@@ -4,10 +4,13 @@
         <meta charset="utf-8">
         <meta name="description" content="$1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="photos/logo.png"/>
+        <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/moist17/moist17.github.io/master/photos/logo.png"/>
         <title>data test</title>
         <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,9 +28,14 @@
                   <li><a href="https://moist17.github.io/moneyblog/blog.html">Money blog</a></li>
                   <li><a href="https://moist17.github.io/about/about.html">About this project</a></li>
                 </ul>
+                <!--
                 <ul>
                   <li id="contact">Contact</li>
                 </ul>
+                -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Contact
+                </button>
         </nav>
 
         <h1>
@@ -54,6 +62,22 @@
                 header: '.navbar'
             });
         </script>
+
+            <!-- Modal start-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Contact me</h4>
+              </div>
+              <div class="modal-body">
+                Welcome to this website. Any suggestions or comments or just want to have a chat please send an email to <span id="email">yimushroom at gmail.com</span>. Looking forward to your feedbacks. :)
+              </div>
+            </div>
+          </div>
+        </div>
+            <!--Modal end-->
 
     </body>
 </html>

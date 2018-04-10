@@ -57,3 +57,9 @@
         $('nav').removeClass('resizing');
     }
 })
+
+  // modal
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
