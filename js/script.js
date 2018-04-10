@@ -8,6 +8,13 @@ sr.reveal('#radarchart', { duration: 500 });
 sr.reveal('#diary', { duration: 500 });
 sr.reveal('#pieChart', { duration: 500 });
 
+
+// modal
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+
 window.onload=function(){
 
 $(window).on('scroll', function(){

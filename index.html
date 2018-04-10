@@ -12,6 +12,7 @@
         <script src="https://d3js.org/d3.v3.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
         <script src="js/d3pie.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="jquery-ui-themes-1.12.1/jquery-ui.css">
         <link rel="stylesheet" href="theme.css">
@@ -21,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </head>
     <body onload="function()">
 
@@ -34,9 +35,14 @@
                          <li><a href="moneyblog/blog.html">Money blog</a></li>
                          <li><a href="about/about.html">About this project</a></li>
                     </ul>
+                    <!--
                     <ul>
                         <a href="mailto: yimushroomyi@gmail.com"><li id="contact">Contact</li></a>
                     </ul>
+                    -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Contact
+                    </button>
                 </nav>
 
         <div class="header">
@@ -543,6 +549,21 @@
         </footer>
 
     </main>
+
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact me</h4>
+      </div>
+      <div class="modal-body">
+        Welcome to this website. Any suggestions or comments or just want to have a chat please send an email to <span id="email">yimushroom at gmail.com</span>. Looking forward to your feedbacks. :)
+      </div>
+    </div>
+  </div>
+</div>
 
         <script>
             var scroll = new SmoothScroll('a[href*="#comparison"], a[href*="#diary"], a[href*="#pagetop"]', {

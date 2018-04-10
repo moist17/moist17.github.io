@@ -15,6 +15,11 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// modal
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
 
 $(window).on('scroll', function(){
     if ($(window).scrollTop()){

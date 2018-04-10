@@ -15,6 +15,41 @@ a:hover {
   text-decoration: none;
 }
 
+.btn, .btn-primary {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.btn:hover, .btn-primary:hover {
+  background-color: #f94e3f;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.btn:active, .btn-primary:active {
+  background-color: #f94e3f;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.btn-primary:hover, .btn-primary:focus, 
+.btn-primary:active, .btn-primary.active, 
+.open>.dropdown-toggle.btn-primary {
+  background-color: #f94e3f;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.modal-body {
+  font-weight: 300;
+  line-height: 20px;
+}
+
+#email {
+  font-weight: 500;
+}
+
 #go_up {
   font-size: 2.5em;
   color: #a3a1a1;
