@@ -83,7 +83,7 @@ h1 span:nth-child(odd) {
 .options {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   font-size: 1.5em;
   text-align: left;
 }
@@ -95,6 +95,10 @@ h1 span:nth-child(odd) {
   height: 100px;
   background-color: #fff;
   opacity: 0.9;
+}
+
+#space {
+  margin-right: 20px;
 }
 
 .options div:a {
